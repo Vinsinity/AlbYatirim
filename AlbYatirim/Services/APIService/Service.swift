@@ -10,10 +10,10 @@ import Alamofire
 
 class Service {
     
-    var router: Router
-    static var shared = Service(router: .init(baseUrl: "https://canlifiyat.com/api/mobile/v1"))
+    var router: ServiceRouter
+    static var shared = Service(router: .init(baseUrl: "https://canlifiyat.com/api/mobile/v1/"))
     
-    init(router: Router) {
+    init(router: ServiceRouter) {
         self.router = router
     }
     

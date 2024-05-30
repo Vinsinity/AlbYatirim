@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		243306402C09215600709584 /* GetBistResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2433063F2C09215600709584 /* GetBistResponse.swift */; };
+		243306432C0929C700709584 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 243306422C0929C700709584 /* Kingfisher */; };
+		243306452C092EB900709584 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243306442C092EB900709584 /* HomeRouter.swift */; };
+		243306472C09348400709584 /* DetailBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243306462C09348400709584 /* DetailBuilder.swift */; };
 		24338D372C07C32600AF5610 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24338D362C07C32600AF5610 /* AppDelegate.swift */; };
 		24338D392C07C32600AF5610 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24338D382C07C32600AF5610 /* SceneDelegate.swift */; };
 		24338D402C07C33900AF5610 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24338D3F2C07C33900AF5610 /* Assets.xcassets */; };
@@ -19,7 +23,7 @@
 		24870A262C07FCEF00A6A897 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24870A252C07FCEF00A6A897 /* DetailViewController.swift */; };
 		24870A282C07FCF500A6A897 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24870A272C07FCF500A6A897 /* DetailViewModel.swift */; };
 		24870A2C2C07FD3100A6A897 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24870A2B2C07FD3100A6A897 /* Endpoint.swift */; };
-		24870A2E2C07FD8500A6A897 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24870A2D2C07FD8500A6A897 /* Router.swift */; };
+		24870A2E2C07FD8500A6A897 /* ServiceRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24870A2D2C07FD8500A6A897 /* ServiceRouter.swift */; };
 		24870A302C07FD9000A6A897 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24870A2F2C07FD9000A6A897 /* Service.swift */; };
 		24870A3D2C08032E00A6A897 /* HomeBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24870A3C2C08032E00A6A897 /* HomeBuilder.swift */; };
 		24870A402C08035100A6A897 /* ViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24870A3F2C08035100A6A897 /* ViewBuilder.swift */; };
@@ -27,6 +31,37 @@
 		24870A4B2C08097400A6A897 /* ServiceRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24870A4A2C08097400A6A897 /* ServiceRequest.swift */; };
 		24870A4F2C08105700A6A897 /* ServiceResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24870A4E2C08105700A6A897 /* ServiceResult.swift */; };
 		24870A512C08149200A6A897 /* ServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24870A502C08149200A6A897 /* ServiceError.swift */; };
+		24870A542C08892900A6A897 /* SectorListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24870A532C08892900A6A897 /* SectorListTableViewCell.swift */; };
+		24870A562C08944600A6A897 /* SectorListTableViewCellHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24870A552C08944600A6A897 /* SectorListTableViewCellHeader.swift */; };
+		24870A6B2C08A72800A6A897 /* Poppins-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24870A592C08A72700A6A897 /* Poppins-BoldItalic.ttf */; };
+		24870A6C2C08A72800A6A897 /* Poppins-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24870A5A2C08A72700A6A897 /* Poppins-Italic.ttf */; };
+		24870A6D2C08A72800A6A897 /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24870A5B2C08A72700A6A897 /* Poppins-SemiBold.ttf */; };
+		24870A6E2C08A72800A6A897 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24870A5C2C08A72700A6A897 /* Poppins-Regular.ttf */; };
+		24870A6F2C08A72800A6A897 /* Poppins-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24870A5D2C08A72700A6A897 /* Poppins-ExtraBold.ttf */; };
+		24870A702C08A72800A6A897 /* Poppins-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24870A5E2C08A72700A6A897 /* Poppins-Thin.ttf */; };
+		24870A712C08A72800A6A897 /* Poppins-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24870A5F2C08A72700A6A897 /* Poppins-MediumItalic.ttf */; };
+		24870A722C08A72800A6A897 /* Poppins-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24870A602C08A72700A6A897 /* Poppins-ExtraLightItalic.ttf */; };
+		24870A732C08A72800A6A897 /* Poppins-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24870A612C08A72700A6A897 /* Poppins-BlackItalic.ttf */; };
+		24870A742C08A72800A6A897 /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24870A622C08A72700A6A897 /* Poppins-Medium.ttf */; };
+		24870A752C08A72800A6A897 /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24870A632C08A72800A6A897 /* Poppins-Light.ttf */; };
+		24870A762C08A72800A6A897 /* Poppins-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24870A642C08A72800A6A897 /* Poppins-SemiBoldItalic.ttf */; };
+		24870A772C08A72800A6A897 /* Poppins-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24870A652C08A72800A6A897 /* Poppins-ThinItalic.ttf */; };
+		24870A782C08A72800A6A897 /* Poppins-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24870A662C08A72800A6A897 /* Poppins-LightItalic.ttf */; };
+		24870A792C08A72800A6A897 /* Poppins-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24870A672C08A72800A6A897 /* Poppins-ExtraBoldItalic.ttf */; };
+		24870A7A2C08A72800A6A897 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24870A682C08A72800A6A897 /* Poppins-Bold.ttf */; };
+		24870A7B2C08A72800A6A897 /* Poppins-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24870A692C08A72800A6A897 /* Poppins-Black.ttf */; };
+		24870A7C2C08A72800A6A897 /* Poppins-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24870A6A2C08A72800A6A897 /* Poppins-ExtraLight.ttf */; };
+		24870A7F2C08A75900A6A897 /* UFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24870A7E2C08A75900A6A897 /* UFont+Extension.swift */; };
+		24870A8F2C08AA8300A6A897 /* Satoshi-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 24870A852C08AA8200A6A897 /* Satoshi-Bold.otf */; };
+		24870A902C08AA8300A6A897 /* Satoshi-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 24870A862C08AA8200A6A897 /* Satoshi-MediumItalic.otf */; };
+		24870A912C08AA8300A6A897 /* Satoshi-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 24870A872C08AA8200A6A897 /* Satoshi-Medium.otf */; };
+		24870A922C08AA8300A6A897 /* Satoshi-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 24870A882C08AA8200A6A897 /* Satoshi-Light.otf */; };
+		24870A932C08AA8300A6A897 /* Satoshi-BlackItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 24870A892C08AA8200A6A897 /* Satoshi-BlackItalic.otf */; };
+		24870A942C08AA8300A6A897 /* Satoshi-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 24870A8A2C08AA8200A6A897 /* Satoshi-BoldItalic.otf */; };
+		24870A952C08AA8300A6A897 /* Satoshi-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 24870A8B2C08AA8200A6A897 /* Satoshi-Italic.otf */; };
+		24870A962C08AA8300A6A897 /* Satoshi-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 24870A8C2C08AA8200A6A897 /* Satoshi-Black.otf */; };
+		24870A972C08AA8300A6A897 /* Satoshi-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 24870A8D2C08AA8300A6A897 /* Satoshi-LightItalic.otf */; };
+		24870A982C08AA8300A6A897 /* Satoshi-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 24870A8E2C08AA8300A6A897 /* Satoshi-Regular.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +82,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2433063F2C09215600709584 /* GetBistResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetBistResponse.swift; sourceTree = "<group>"; };
+		243306442C092EB900709584 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		243306462C09348400709584 /* DetailBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailBuilder.swift; sourceTree = "<group>"; };
 		24338D332C07C32500AF5610 /* AlbYatirim.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlbYatirim.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24338D362C07C32600AF5610 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24338D382C07C32600AF5610 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,13 +101,44 @@
 		24870A252C07FCEF00A6A897 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		24870A272C07FCF500A6A897 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 		24870A2B2C07FD3100A6A897 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
-		24870A2D2C07FD8500A6A897 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		24870A2D2C07FD8500A6A897 /* ServiceRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceRouter.swift; sourceTree = "<group>"; };
 		24870A2F2C07FD9000A6A897 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		24870A3C2C08032E00A6A897 /* HomeBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBuilder.swift; sourceTree = "<group>"; };
 		24870A3F2C08035100A6A897 /* ViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewBuilder.swift; sourceTree = "<group>"; };
 		24870A4A2C08097400A6A897 /* ServiceRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceRequest.swift; sourceTree = "<group>"; };
 		24870A4E2C08105700A6A897 /* ServiceResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceResult.swift; sourceTree = "<group>"; };
 		24870A502C08149200A6A897 /* ServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceError.swift; sourceTree = "<group>"; };
+		24870A532C08892900A6A897 /* SectorListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectorListTableViewCell.swift; sourceTree = "<group>"; };
+		24870A552C08944600A6A897 /* SectorListTableViewCellHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectorListTableViewCellHeader.swift; sourceTree = "<group>"; };
+		24870A592C08A72700A6A897 /* Poppins-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-BoldItalic.ttf"; sourceTree = "<group>"; };
+		24870A5A2C08A72700A6A897 /* Poppins-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Italic.ttf"; sourceTree = "<group>"; };
+		24870A5B2C08A72700A6A897 /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
+		24870A5C2C08A72700A6A897 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		24870A5D2C08A72700A6A897 /* Poppins-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraBold.ttf"; sourceTree = "<group>"; };
+		24870A5E2C08A72700A6A897 /* Poppins-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Thin.ttf"; sourceTree = "<group>"; };
+		24870A5F2C08A72700A6A897 /* Poppins-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-MediumItalic.ttf"; sourceTree = "<group>"; };
+		24870A602C08A72700A6A897 /* Poppins-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		24870A612C08A72700A6A897 /* Poppins-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-BlackItalic.ttf"; sourceTree = "<group>"; };
+		24870A622C08A72700A6A897 /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
+		24870A632C08A72800A6A897 /* Poppins-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Light.ttf"; sourceTree = "<group>"; };
+		24870A642C08A72800A6A897 /* Poppins-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		24870A652C08A72800A6A897 /* Poppins-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ThinItalic.ttf"; sourceTree = "<group>"; };
+		24870A662C08A72800A6A897 /* Poppins-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-LightItalic.ttf"; sourceTree = "<group>"; };
+		24870A672C08A72800A6A897 /* Poppins-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		24870A682C08A72800A6A897 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		24870A692C08A72800A6A897 /* Poppins-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Black.ttf"; sourceTree = "<group>"; };
+		24870A6A2C08A72800A6A897 /* Poppins-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLight.ttf"; sourceTree = "<group>"; };
+		24870A7E2C08A75900A6A897 /* UFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UFont+Extension.swift"; sourceTree = "<group>"; };
+		24870A852C08AA8200A6A897 /* Satoshi-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-Bold.otf"; sourceTree = "<group>"; };
+		24870A862C08AA8200A6A897 /* Satoshi-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-MediumItalic.otf"; sourceTree = "<group>"; };
+		24870A872C08AA8200A6A897 /* Satoshi-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-Medium.otf"; sourceTree = "<group>"; };
+		24870A882C08AA8200A6A897 /* Satoshi-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-Light.otf"; sourceTree = "<group>"; };
+		24870A892C08AA8200A6A897 /* Satoshi-BlackItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-BlackItalic.otf"; sourceTree = "<group>"; };
+		24870A8A2C08AA8200A6A897 /* Satoshi-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-BoldItalic.otf"; sourceTree = "<group>"; };
+		24870A8B2C08AA8200A6A897 /* Satoshi-Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-Italic.otf"; sourceTree = "<group>"; };
+		24870A8C2C08AA8200A6A897 /* Satoshi-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-Black.otf"; sourceTree = "<group>"; };
+		24870A8D2C08AA8300A6A897 /* Satoshi-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-LightItalic.otf"; sourceTree = "<group>"; };
+		24870A8E2C08AA8300A6A897 /* Satoshi-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-Regular.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +146,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				243306432C0929C700709584 /* Kingfisher in Frameworks */,
 				24870A472C0807DE00A6A897 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -169,9 +239,11 @@
 		24870A1E2C07FBE800A6A897 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				24870A522C0888E000A6A897 /* Cells */,
 				24870A202C07FCBE00A6A897 /* HomeViewController.swift */,
 				24870A222C07FCCE00A6A897 /* HomeViewModel.swift */,
 				24870A3C2C08032E00A6A897 /* HomeBuilder.swift */,
+				243306442C092EB900709584 /* HomeRouter.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -181,6 +253,7 @@
 			children = (
 				24870A252C07FCEF00A6A897 /* DetailViewController.swift */,
 				24870A272C07FCF500A6A897 /* DetailViewModel.swift */,
+				243306462C09348400709584 /* DetailBuilder.swift */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -189,7 +262,7 @@
 			isa = PBXGroup;
 			children = (
 				24870A2B2C07FD3100A6A897 /* Endpoint.swift */,
-				24870A2D2C07FD8500A6A897 /* Router.swift */,
+				24870A2D2C07FD8500A6A897 /* ServiceRouter.swift */,
 				24870A2F2C07FD9000A6A897 /* Service.swift */,
 				24870A4A2C08097400A6A897 /* ServiceRequest.swift */,
 				24870A4E2C08105700A6A897 /* ServiceResult.swift */,
@@ -201,6 +274,7 @@
 		24870A362C07FE3900A6A897 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				2433063F2C09215600709584 /* GetBistResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -217,6 +291,7 @@
 		24870A382C07FE6A00A6A897 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				24870A7D2C08A75000A6A897 /* Font */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -233,6 +308,7 @@
 		24870A3A2C0801E000A6A897 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				24870A572C08A6FB00A6A897 /* Fonts */,
 				24338D3F2C07C33900AF5610 /* Assets.xcassets */,
 				24338D412C07C33900AF5610 /* LaunchScreen.storyboard */,
 			);
@@ -245,6 +321,74 @@
 				24870A3F2C08035100A6A897 /* ViewBuilder.swift */,
 			);
 			path = UI;
+			sourceTree = "<group>";
+		};
+		24870A522C0888E000A6A897 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				24870A532C08892900A6A897 /* SectorListTableViewCell.swift */,
+				24870A552C08944600A6A897 /* SectorListTableViewCellHeader.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		24870A572C08A6FB00A6A897 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				24870A802C08A92D00A6A897 /* Satoshi */,
+				24870A582C08A6FF00A6A897 /* Poppins */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		24870A582C08A6FF00A6A897 /* Poppins */ = {
+			isa = PBXGroup;
+			children = (
+				24870A692C08A72800A6A897 /* Poppins-Black.ttf */,
+				24870A612C08A72700A6A897 /* Poppins-BlackItalic.ttf */,
+				24870A682C08A72800A6A897 /* Poppins-Bold.ttf */,
+				24870A592C08A72700A6A897 /* Poppins-BoldItalic.ttf */,
+				24870A5D2C08A72700A6A897 /* Poppins-ExtraBold.ttf */,
+				24870A672C08A72800A6A897 /* Poppins-ExtraBoldItalic.ttf */,
+				24870A6A2C08A72800A6A897 /* Poppins-ExtraLight.ttf */,
+				24870A602C08A72700A6A897 /* Poppins-ExtraLightItalic.ttf */,
+				24870A5A2C08A72700A6A897 /* Poppins-Italic.ttf */,
+				24870A632C08A72800A6A897 /* Poppins-Light.ttf */,
+				24870A662C08A72800A6A897 /* Poppins-LightItalic.ttf */,
+				24870A622C08A72700A6A897 /* Poppins-Medium.ttf */,
+				24870A5F2C08A72700A6A897 /* Poppins-MediumItalic.ttf */,
+				24870A5C2C08A72700A6A897 /* Poppins-Regular.ttf */,
+				24870A5B2C08A72700A6A897 /* Poppins-SemiBold.ttf */,
+				24870A642C08A72800A6A897 /* Poppins-SemiBoldItalic.ttf */,
+				24870A5E2C08A72700A6A897 /* Poppins-Thin.ttf */,
+				24870A652C08A72800A6A897 /* Poppins-ThinItalic.ttf */,
+			);
+			path = Poppins;
+			sourceTree = "<group>";
+		};
+		24870A7D2C08A75000A6A897 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				24870A7E2C08A75900A6A897 /* UFont+Extension.swift */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		24870A802C08A92D00A6A897 /* Satoshi */ = {
+			isa = PBXGroup;
+			children = (
+				24870A8C2C08AA8200A6A897 /* Satoshi-Black.otf */,
+				24870A892C08AA8200A6A897 /* Satoshi-BlackItalic.otf */,
+				24870A852C08AA8200A6A897 /* Satoshi-Bold.otf */,
+				24870A8A2C08AA8200A6A897 /* Satoshi-BoldItalic.otf */,
+				24870A8B2C08AA8200A6A897 /* Satoshi-Italic.otf */,
+				24870A882C08AA8200A6A897 /* Satoshi-Light.otf */,
+				24870A8D2C08AA8300A6A897 /* Satoshi-LightItalic.otf */,
+				24870A872C08AA8200A6A897 /* Satoshi-Medium.otf */,
+				24870A862C08AA8200A6A897 /* Satoshi-MediumItalic.otf */,
+				24870A8E2C08AA8300A6A897 /* Satoshi-Regular.otf */,
+			);
+			path = Satoshi;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,6 +409,7 @@
 			name = AlbYatirim;
 			packageProductDependencies = (
 				24870A462C0807DE00A6A897 /* Alamofire */,
+				243306422C0929C700709584 /* Kingfisher */,
 			);
 			productName = AlbYatirim;
 			productReference = 24338D332C07C32500AF5610 /* AlbYatirim.app */;
@@ -340,6 +485,7 @@
 			mainGroup = 24338D2A2C07C32400AF5610;
 			packageReferences = (
 				24870A452C0807DE00A6A897 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				243306412C0929C700709584 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = 24338D342C07C32500AF5610 /* Products */;
 			projectDirPath = "";
@@ -357,8 +503,36 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24870A7C2C08A72800A6A897 /* Poppins-ExtraLight.ttf in Resources */,
+				24870A6D2C08A72800A6A897 /* Poppins-SemiBold.ttf in Resources */,
+				24870A7A2C08A72800A6A897 /* Poppins-Bold.ttf in Resources */,
+				24870A8F2C08AA8300A6A897 /* Satoshi-Bold.otf in Resources */,
+				24870A902C08AA8300A6A897 /* Satoshi-MediumItalic.otf in Resources */,
+				24870A752C08A72800A6A897 /* Poppins-Light.ttf in Resources */,
+				24870A912C08AA8300A6A897 /* Satoshi-Medium.otf in Resources */,
+				24870A6B2C08A72800A6A897 /* Poppins-BoldItalic.ttf in Resources */,
+				24870A922C08AA8300A6A897 /* Satoshi-Light.otf in Resources */,
+				24870A762C08A72800A6A897 /* Poppins-SemiBoldItalic.ttf in Resources */,
+				24870A932C08AA8300A6A897 /* Satoshi-BlackItalic.otf in Resources */,
+				24870A7B2C08A72800A6A897 /* Poppins-Black.ttf in Resources */,
+				24870A942C08AA8300A6A897 /* Satoshi-BoldItalic.otf in Resources */,
+				24870A722C08A72800A6A897 /* Poppins-ExtraLightItalic.ttf in Resources */,
 				24338D402C07C33900AF5610 /* Assets.xcassets in Resources */,
+				24870A6F2C08A72800A6A897 /* Poppins-ExtraBold.ttf in Resources */,
+				24870A972C08AA8300A6A897 /* Satoshi-LightItalic.otf in Resources */,
+				24870A782C08A72800A6A897 /* Poppins-LightItalic.ttf in Resources */,
+				24870A962C08AA8300A6A897 /* Satoshi-Black.otf in Resources */,
+				24870A952C08AA8300A6A897 /* Satoshi-Italic.otf in Resources */,
+				24870A982C08AA8300A6A897 /* Satoshi-Regular.otf in Resources */,
+				24870A6E2C08A72800A6A897 /* Poppins-Regular.ttf in Resources */,
+				24870A702C08A72800A6A897 /* Poppins-Thin.ttf in Resources */,
+				24870A6C2C08A72800A6A897 /* Poppins-Italic.ttf in Resources */,
+				24870A712C08A72800A6A897 /* Poppins-MediumItalic.ttf in Resources */,
+				24870A742C08A72800A6A897 /* Poppins-Medium.ttf in Resources */,
+				24870A772C08A72800A6A897 /* Poppins-ThinItalic.ttf in Resources */,
 				24338D432C07C33900AF5610 /* Base in Resources */,
+				24870A732C08A72800A6A897 /* Poppins-BlackItalic.ttf in Resources */,
+				24870A792C08A72800A6A897 /* Poppins-ExtraBoldItalic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,14 +560,20 @@
 				24870A3D2C08032E00A6A897 /* HomeBuilder.swift in Sources */,
 				24338D372C07C32600AF5610 /* AppDelegate.swift in Sources */,
 				24870A4F2C08105700A6A897 /* ServiceResult.swift in Sources */,
+				24870A7F2C08A75900A6A897 /* UFont+Extension.swift in Sources */,
+				243306452C092EB900709584 /* HomeRouter.swift in Sources */,
 				24870A2C2C07FD3100A6A897 /* Endpoint.swift in Sources */,
 				24870A402C08035100A6A897 /* ViewBuilder.swift in Sources */,
 				24870A4B2C08097400A6A897 /* ServiceRequest.swift in Sources */,
+				24870A562C08944600A6A897 /* SectorListTableViewCellHeader.swift in Sources */,
 				24870A282C07FCF500A6A897 /* DetailViewModel.swift in Sources */,
-				24870A2E2C07FD8500A6A897 /* Router.swift in Sources */,
+				24870A2E2C07FD8500A6A897 /* ServiceRouter.swift in Sources */,
+				24870A542C08892900A6A897 /* SectorListTableViewCell.swift in Sources */,
 				24338D392C07C32600AF5610 /* SceneDelegate.swift in Sources */,
 				24870A302C07FD9000A6A897 /* Service.swift in Sources */,
+				243306402C09215600709584 /* GetBistResponse.swift in Sources */,
 				24870A262C07FCEF00A6A897 /* DetailViewController.swift in Sources */,
+				243306472C09348400709584 /* DetailBuilder.swift in Sources */,
 				24870A232C07FCCE00A6A897 /* HomeViewModel.swift in Sources */,
 				24870A512C08149200A6A897 /* ServiceError.swift in Sources */,
 				24870A212C07FCBE00A6A897 /* HomeViewController.swift in Sources */,
@@ -735,6 +915,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		243306412C0929C700709584 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.11.0;
+			};
+		};
 		24870A452C0807DE00A6A897 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
@@ -746,6 +934,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		243306422C0929C700709584 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 243306412C0929C700709584 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
 		24870A462C0807DE00A6A897 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 24870A452C0807DE00A6A897 /* XCRemoteSwiftPackageReference "Alamofire" */;

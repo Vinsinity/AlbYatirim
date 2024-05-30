@@ -1,5 +1,5 @@
 //
-//  Router.swift
+//  ServiceRouter.swift
 //  AlbYatirim
 //
 //  Created by Erhan Hangül on 30.05.2024.
@@ -12,7 +12,7 @@ enum RouterError: Error {
     case encoding
 }
 
-class Router {
+class ServiceRouter {
     
     var baseUrl: String
     

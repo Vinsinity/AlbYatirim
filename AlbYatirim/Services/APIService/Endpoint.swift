@@ -8,5 +8,6 @@
 import Foundation
 
 enum Endpoint: String {
+    case getBist = "service/helper/getBist"
     case list = "test"
 }

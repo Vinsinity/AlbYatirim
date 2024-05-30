@@ -8,5 +8,11 @@
 import UIKit
 
 protocol ViewBuilder: AnyObject {
-    static func build() -> UIViewController
+    static func build(parameter: [String]) -> UIViewController
+}
+
+extension ViewBuilder {
+    static func build(parameter: [String] = []) -> UIViewController {
+        return build(parameter: parameter)
+    }
 }
