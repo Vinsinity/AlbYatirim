@@ -20,9 +20,13 @@
 		24870A282C07FCF500A6A897 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24870A272C07FCF500A6A897 /* DetailViewModel.swift */; };
 		24870A2C2C07FD3100A6A897 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24870A2B2C07FD3100A6A897 /* Endpoint.swift */; };
 		24870A2E2C07FD8500A6A897 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24870A2D2C07FD8500A6A897 /* Router.swift */; };
-		24870A302C07FD9000A6A897 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24870A2F2C07FD9000A6A897 /* ApiService.swift */; };
-		24870A332C07FDC800A6A897 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24870A322C07FDC800A6A897 /* Service.swift */; };
-		24870A352C07FE2100A6A897 /* LocalService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24870A342C07FE2100A6A897 /* LocalService.swift */; };
+		24870A302C07FD9000A6A897 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24870A2F2C07FD9000A6A897 /* Service.swift */; };
+		24870A3D2C08032E00A6A897 /* HomeBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24870A3C2C08032E00A6A897 /* HomeBuilder.swift */; };
+		24870A402C08035100A6A897 /* ViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24870A3F2C08035100A6A897 /* ViewBuilder.swift */; };
+		24870A472C0807DE00A6A897 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 24870A462C0807DE00A6A897 /* Alamofire */; };
+		24870A4B2C08097400A6A897 /* ServiceRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24870A4A2C08097400A6A897 /* ServiceRequest.swift */; };
+		24870A4F2C08105700A6A897 /* ServiceResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24870A4E2C08105700A6A897 /* ServiceResult.swift */; };
+		24870A512C08149200A6A897 /* ServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24870A502C08149200A6A897 /* ServiceError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,9 +64,12 @@
 		24870A272C07FCF500A6A897 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 		24870A2B2C07FD3100A6A897 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		24870A2D2C07FD8500A6A897 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
-		24870A2F2C07FD9000A6A897 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
-		24870A322C07FDC800A6A897 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
-		24870A342C07FE2100A6A897 /* LocalService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalService.swift; sourceTree = "<group>"; };
+		24870A2F2C07FD9000A6A897 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		24870A3C2C08032E00A6A897 /* HomeBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBuilder.swift; sourceTree = "<group>"; };
+		24870A3F2C08035100A6A897 /* ViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewBuilder.swift; sourceTree = "<group>"; };
+		24870A4A2C08097400A6A897 /* ServiceRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceRequest.swift; sourceTree = "<group>"; };
+		24870A4E2C08105700A6A897 /* ServiceResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceResult.swift; sourceTree = "<group>"; };
+		24870A502C08149200A6A897 /* ServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24870A472C0807DE00A6A897 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,9 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				24870A362C07FE3900A6A897 /* Models */,
-				24870A312C07FDBA00A6A897 /* LocalService */,
 				24870A292C07FCFD00A6A897 /* APIService */,
-				24870A322C07FDC800A6A897 /* Service.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -165,6 +171,7 @@
 			children = (
 				24870A202C07FCBE00A6A897 /* HomeViewController.swift */,
 				24870A222C07FCCE00A6A897 /* HomeViewModel.swift */,
+				24870A3C2C08032E00A6A897 /* HomeBuilder.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -183,17 +190,12 @@
 			children = (
 				24870A2B2C07FD3100A6A897 /* Endpoint.swift */,
 				24870A2D2C07FD8500A6A897 /* Router.swift */,
-				24870A2F2C07FD9000A6A897 /* ApiService.swift */,
+				24870A2F2C07FD9000A6A897 /* Service.swift */,
+				24870A4A2C08097400A6A897 /* ServiceRequest.swift */,
+				24870A4E2C08105700A6A897 /* ServiceResult.swift */,
+				24870A502C08149200A6A897 /* ServiceError.swift */,
 			);
 			path = APIService;
-			sourceTree = "<group>";
-		};
-		24870A312C07FDBA00A6A897 /* LocalService */ = {
-			isa = PBXGroup;
-			children = (
-				24870A342C07FE2100A6A897 /* LocalService.swift */,
-			);
-			path = LocalService;
 			sourceTree = "<group>";
 		};
 		24870A362C07FE3900A6A897 /* Models */ = {
@@ -206,6 +208,7 @@
 		24870A372C07FE6100A6A897 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				24870A3E2C08034A00A6A897 /* UI */,
 				24870A382C07FE6A00A6A897 /* Extensions */,
 			);
 			path = Utils;
@@ -236,6 +239,14 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		24870A3E2C08034A00A6A897 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				24870A3F2C08035100A6A897 /* ViewBuilder.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -252,6 +263,9 @@
 			dependencies = (
 			);
 			name = AlbYatirim;
+			packageProductDependencies = (
+				24870A462C0807DE00A6A897 /* Alamofire */,
+			);
 			productName = AlbYatirim;
 			productReference = 24338D332C07C32500AF5610 /* AlbYatirim.app */;
 			productType = "com.apple.product-type.application";
@@ -324,6 +338,9 @@
 				Base,
 			);
 			mainGroup = 24338D2A2C07C32400AF5610;
+			packageReferences = (
+				24870A452C0807DE00A6A897 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 24338D342C07C32500AF5610 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -366,16 +383,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24870A3D2C08032E00A6A897 /* HomeBuilder.swift in Sources */,
 				24338D372C07C32600AF5610 /* AppDelegate.swift in Sources */,
+				24870A4F2C08105700A6A897 /* ServiceResult.swift in Sources */,
 				24870A2C2C07FD3100A6A897 /* Endpoint.swift in Sources */,
+				24870A402C08035100A6A897 /* ViewBuilder.swift in Sources */,
+				24870A4B2C08097400A6A897 /* ServiceRequest.swift in Sources */,
 				24870A282C07FCF500A6A897 /* DetailViewModel.swift in Sources */,
 				24870A2E2C07FD8500A6A897 /* Router.swift in Sources */,
-				24870A352C07FE2100A6A897 /* LocalService.swift in Sources */,
 				24338D392C07C32600AF5610 /* SceneDelegate.swift in Sources */,
-				24870A302C07FD9000A6A897 /* ApiService.swift in Sources */,
+				24870A302C07FD9000A6A897 /* Service.swift in Sources */,
 				24870A262C07FCEF00A6A897 /* DetailViewController.swift in Sources */,
-				24870A332C07FDC800A6A897 /* Service.swift in Sources */,
 				24870A232C07FCCE00A6A897 /* HomeViewModel.swift in Sources */,
+				24870A512C08149200A6A897 /* ServiceError.swift in Sources */,
 				24870A212C07FCBE00A6A897 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -713,6 +733,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		24870A452C0807DE00A6A897 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		24870A462C0807DE00A6A897 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 24870A452C0807DE00A6A897 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 24338D2B2C07C32400AF5610 /* Project object */;
 }
