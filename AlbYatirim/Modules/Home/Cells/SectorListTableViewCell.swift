@@ -20,13 +20,60 @@ class SectorListTableViewCell: UITableViewCell {
     
     static let identifier = String(describing: SectorListTableViewCell.self)
     
-    let stack = UIStackView()
-    let stockView = UIView()
-    var stockIcon = UIImageView()
-    var stockShortName = UILabel()
-    var stockLongName = UILabel()
-    var changeLabel = UILabel()
-    var priceLabel = UILabel()
+    private let stack: UIStackView = {
+        let stack = UIStackView()
+        stack.axis = .horizontal
+        stack.distribution = .fillEqually
+        stack.alignment = .fill
+        stack.translatesAutoresizingMaskIntoConstraints = false
+        return stack
+    }()
+    
+    private let stockView: UIView = {
+        let view = UIView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }()
+    
+    private var stockIcon: UIImageView = {
+        let image = UIImageView()
+        image.translatesAutoresizingMaskIntoConstraints = false
+        return image
+    }()
+    
+    private var stockShortName: UILabel = {
+        let label = UILabel()
+        label.font = UIFont.customFont(family: .poppins, style: .medium, size: 16)
+        label.textColor = UIColor.black
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }()
+    
+    private var stockLongName: UILabel = {
+        let label = UILabel()
+        label.font = UIFont.customFont(family: .satoshi, style: .light, size: 10)
+        label.lineBreakMode = .byTruncatingTail
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }()
+    
+    private var changeLabel: UILabel = {
+        let label = UILabel()
+        label.font = UIFont.customFont(family: .satoshi, style: .regular, size: 14)
+        label.textColor = UIColor.green100
+        label.textAlignment = .right
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }()
+    
+    var priceLabel: UILabel = {
+        let label = UILabel()
+        label.font = UIFont.customFont(family: .satoshi, style: .regular, size: 14)
+        label.textColor = UIColor.blue900
+        label.textAlignment = .right
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }()
 
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -39,30 +86,7 @@ class SectorListTableViewCell: UITableViewCell {
     }
 
     private func setupViews() {
-        stack.axis = .horizontal
-        stack.distribution = .fillEqually
-        stack.alignment = .fill
-        stack.translatesAutoresizingMaskIntoConstraints = false
         addSubview(stack)
-        
-        stockShortName.font = UIFont.customFont(family: .poppins, style: .medium, size: 16)
-        stockShortName.textColor = UIColor.black
-        
-        stockLongName.font = UIFont.customFont(family: .satoshi, style: .light, size: 10)
-        stockLongName.lineBreakMode = .byTruncatingTail
-        
-        changeLabel.font = UIFont.customFont(family: .satoshi, style: .regular, size: 14)
-        changeLabel.textColor = UIColor.green100
-        changeLabel.textAlignment = .right
-        
-        priceLabel.font = UIFont.customFont(family: .poppins, style: .medium, size: 14)
-        priceLabel.textColor = UIColor.blue900
-        priceLabel.textAlignment = .right
-        
-        stockView.translatesAutoresizingMaskIntoConstraints = false
-        stockIcon.translatesAutoresizingMaskIntoConstraints = false
-        stockShortName.translatesAutoresizingMaskIntoConstraints = false
-        stockLongName.translatesAutoresizingMaskIntoConstraints = false
         
         stockView.addSubview(stockIcon)
         stockView.addSubview(stockShortName)
@@ -73,8 +97,10 @@ class SectorListTableViewCell: UITableViewCell {
             stockIcon.leadingAnchor.constraint(equalTo: stockView.leadingAnchor, constant: 5),
             stockIcon.heightAnchor.constraint(equalToConstant: 42),
             stockIcon.widthAnchor.constraint(equalToConstant: 42),
+            
             stockShortName.topAnchor.constraint(equalTo: stockIcon.topAnchor),
             stockShortName.leadingAnchor.constraint(equalTo: stockIcon.trailingAnchor, constant: 10),
+            
             stockLongName.bottomAnchor.constraint(equalTo: stockIcon.bottomAnchor),
             stockLongName.leadingAnchor.constraint(equalTo: stockIcon.trailingAnchor, constant: 10),
             stockLongName.trailingAnchor.constraint(equalTo: stockView.trailingAnchor)

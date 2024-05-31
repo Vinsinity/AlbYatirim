@@ -24,7 +24,6 @@ class HomeViewModel: HomeViewModelProtocol {
     // MARK: Load functionality
     func load() {
         delegate?.homeViewOutput(output: .setLoading(true))
-        print("HomeViewModel Load called, need service implementation")
         let parameters: Parameters = [
             "pagination": "false",
             "offset": 1,
@@ -32,13 +31,12 @@ class HomeViewModel: HomeViewModelProtocol {
             "sector": "S8212",
         ]
         
-        Service.shared.fetch(request: .init(parameters: parameters, endpoint: .getBist, method: .get, encoding: URLEncoding.default)) {
+        Service.shared.fetch(request: .init(parameters: parameters, endpoint: .getStocks("Bist"), method: .get, encoding: URLEncoding.default)) {
             [unowned self] (response: ServiceResult<GetBistResponse>) in
             
             delegate?.homeViewOutput(output: .setLoading(false))
             switch response {
             case .success(let response):
-//                print(response)
                 self.prepareResponse(response: response)
             case .failure(let error):
                 delegate?.homeViewOutput(output: .showAlert(title: "", message: error.localizedDescription))

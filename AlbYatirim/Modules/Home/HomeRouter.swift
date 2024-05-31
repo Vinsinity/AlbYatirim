@@ -7,6 +7,7 @@
 
 import UIKit
 
+// - MARK: Router Protocol
 protocol Router {
    func route(
       to route: HomeViewController.Route,
@@ -14,6 +15,7 @@ protocol Router {
    )
 }
 
+// - MARK: Home Router
 class HomeRouter: Router {
     var viewController: UIViewController
     
@@ -21,10 +23,11 @@ class HomeRouter: Router {
         self.viewController = viewController
     }
     
+    
+    // MARK: Route Method
     func route(to route: HomeViewController.Route, parameters: Any?) {
         switch route {
         case .detail(let symbol):
-            print(symbol)
             let view = DetailBuilder.build(parameter: [symbol])
             self.viewController.navigationController?.pushViewController(view, animated: true)
         }

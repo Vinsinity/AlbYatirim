@@ -7,11 +7,12 @@
 
 import UIKit
 
+// - MARK: Detail View Builder
 class DetailBuilder: ViewBuilder {
     
     static func build(parameter: [String]) -> UIViewController {
         let view = DetailViewController()
-        let viewModel = DetailViewModel()
+        let viewModel = DetailViewModel(symbol: parameter[0])
         
         viewModel.delegate = view
         view.viewModel = viewModel

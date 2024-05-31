@@ -14,7 +14,17 @@ class HomeViewController: UIViewController {
         case detail(symbol: String)
     }
     
-    let sectorListTableView = UITableView()
+    private let sectorListTableView: UITableView = {
+        let tableView = UITableView()
+        tableView.separatorInset = UIEdgeInsets(top: 0, left: 15, bottom: 0, right: 15)
+        
+        tableView.register(SectorListTableViewCell.self, forCellReuseIdentifier: SectorListTableViewCell.identifier)
+        tableView.register(SectorListTableViewCellHeader.self,
+            forHeaderFooterViewReuseIdentifier: "sectionHeader")
+        
+        tableView.translatesAutoresizingMaskIntoConstraints = false
+        return tableView
+    }()
     
     var viewModel: HomeViewModelProtocol?
     var sectorList: [SectorListTableViewCellPresentModel]?
@@ -23,6 +33,35 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         setupUI()
         viewModel?.load()
+        
+//        self.view.backgroundColor = UIColor.blue500
+//        navigationController?.navigationBar.prefersLargeTitles = true
+//        navigationController?.navigationBar.backgroundColor = UIColor.blue500
+//        navigationController?.navigationBar.largeTitleTextAttributes = [
+//            NSAttributedString.Key.foregroundColor: UIColor.white
+//        ]
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        self.view.backgroundColor = UIColor.blue500
+        navigationController?.navigationBar.isHidden = false
+        navigationController?.navigationBar.prefersLargeTitles = true
+        navigationController?.navigationBar.backgroundColor = UIColor.blue500
+        navigationController?.navigationBar.largeTitleTextAttributes = [
+            NSAttributedString.Key.foregroundColor: UIColor.white
+        ]
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.view.backgroundColor = UIColor.blue500
+        navigationController?.navigationBar.isHidden = false
+        navigationController?.navigationBar.prefersLargeTitles = true
+        navigationController?.navigationBar.backgroundColor = UIColor.blue500
+        navigationController?.navigationBar.largeTitleTextAttributes = [
+            NSAttributedString.Key.foregroundColor: UIColor.white
+        ]
     }
 
 }
@@ -38,12 +77,6 @@ extension HomeViewController {
     
     private func setTitle(title: String) {
         self.title = title
-        self.view.backgroundColor = UIColor.blue500
-        navigationController?.navigationBar.prefersLargeTitles = true
-        navigationController?.navigationBar.backgroundColor = UIColor.blue500
-        navigationController?.navigationBar.largeTitleTextAttributes = [
-            NSAttributedString.Key.foregroundColor: UIColor.white
-        ]
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
@@ -54,13 +87,6 @@ extension HomeViewController {
         sectorListTableView.dataSource = self
         sectorListTableView.delegate = self
         
-        sectorListTableView.separatorInset = UIEdgeInsets(top: 0, left: 15, bottom: 0, right: 15)
-        
-        sectorListTableView.register(SectorListTableViewCell.self, forCellReuseIdentifier: SectorListTableViewCell.identifier)
-        sectorListTableView.register(SectorListTableViewCellHeader.self,
-            forHeaderFooterViewReuseIdentifier: "sectionHeader")
-        
-        sectorListTableView.translatesAutoresizingMaskIntoConstraints = false
         self.view.addSubview(sectorListTableView)
         
         NSLayoutConstraint.activate([
@@ -123,7 +149,6 @@ extension HomeViewController: HomeViewModelDelegate {
         case .showList(let sectorList):
             self.sectorList = sectorList
             self.sectorListTableView.reloadData()
-            print("Show list called")
         case .showAlert(let title, let message):
             print("\(title) - \(message)")
         }

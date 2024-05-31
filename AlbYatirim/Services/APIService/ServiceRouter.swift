@@ -22,7 +22,7 @@ class ServiceRouter {
     
     func generateUrl(request: ServiceRequest) throws -> URLRequest {
         var urlComponents = URLComponents(string: self.baseUrl)
-        urlComponents?.path.append(request.endpoint.rawValue)
+        urlComponents?.path.append(request.endpoint.path)
         
         guard let requestUrl = urlComponents?.url else {
             throw RouterError.urlGenerate
