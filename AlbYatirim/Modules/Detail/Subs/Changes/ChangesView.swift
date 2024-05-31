@@ -82,7 +82,6 @@ extension ChangesView: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ChangesCollectionViewCell.identifier, for: indexPath) as! ChangesCollectionViewCell
-        cell.backgroundColor = .white
         cell.period.text = "\(data?[indexPath.row].period ?? "-") Değişim"
         cell.high.text = "Zirve \(data?[indexPath.row].high ?? "-")₺"
         cell.low.text = "Dip \(data?[indexPath.row].low ?? "-")₺"

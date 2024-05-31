@@ -44,6 +44,10 @@ class ChangesCollectionViewCell: UICollectionViewCell {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
+        
+        backgroundColor = .lightGray.withAlphaComponent(0.2)
+        layer.cornerRadius = 25
+        
         addSubview(period)
         addSubview(change)
         addSubview(low)
